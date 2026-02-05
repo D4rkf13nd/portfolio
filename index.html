@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT: PORTFOLIO</title>
+    <link rel="icon" type="image/png" href="img/J.png" sizes="100x100">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@emailjs/browser@4/dist/email.min.js" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <div class="cursor"></div>
+
+    <nav>
+        <button class="nav-menu-btn" id="navMenuBtn" aria-label="Toggle menu">
+            <div class="logo-box"><img src="img/J.png" alt="Logo"></div>
+            <div class="menu-text"></div>
+        </button>
+        <div class="nav-links" id="navLinks">
+            <a href="#services">Services</a>
+            <a href="#resume">Resume</a>
+            <a href="#work">Works</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-left">
+            <div class=""></div>
+            <div>
+                <h1 class="hero-h1">TESADO<br>JAYMAR.</h1>
+                <div class="yellow-bar"></div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/shibuii.jm/"><img src="img/ig.gif" alt="Instagram"></a>
+                <a href="https://www.facebook.com/D4rkf13nd/"><img src="img/fb.gif" alt="Facebook"></a>
+                <a href="https://github.com/D4rkf13nd"><img src="img/github.gif" alt="GitHub"></a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tesadojaymar042004@gmail.com"><img src="img/gmail.gif" alt="Gmail"></a>
+            </div>
+        </div>
+
+        <div class="hero-center">
+            <img class="sticker" src="img/image1.png" alt="Tesad, Jaymar">
+        </div>
+
+        <div class="hero-right">
+            <div class="text-right">
+                <span class="intro-tag">— Introduction</span>
+                <h2>UI/UX Designer & Developer</h2>
+                <p><span id="typing-subtitle"></span></p>
+                <a href="#about" class="cta-link">My story &nbsp; →</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="stats-bar">
+        <div class="stat-item"><h3>14</h3><p>Projects</p></div>
+        <div class="stat-item"><h3>2+</h3><p>Years Exp</p></div>
+        <div class="stat-item"><h3>5</h3><p>Happy Clients</p></div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="section-header">
+            <div class="section-kicker">— Services</div>
+            <h2 class="section-title">What I can help you build.</h2>
+            <p class="section-subtitle">From interface design to full-stack prototypes, I focus on shipping clean, fast, user-first products.</p>
+        </div>
+
+        <div class="grid-4">
+            <article class="service-card">
+                <div class="service-top">
+                    <h3>Graphic Design</h3>
+                    <span class="pill">Visuals + Branding</span>
+                </div>
+                <p>I create compelling visuals and brand assets that communicate clearly and leave a lasting impression.</p>
+                <div class="service-meta">
+                    <span>Brand Identity</span>
+                    <span>MS Powerpoint</span>
+                    <span>Canva</span>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-top">
+                    <h3>UI/UX Design</h3>
+                    <span class="pill">Wireframes → UI</span>
+                </div>
+                <p>I design modern interfaces with strong hierarchy, accessible contrast, and thoughtful interactions.</p>
+                <div class="service-meta">
+                    <span>Figma</span>
+                    <span>Design Systems</span>
+                    <span>Prototyping</span>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-top">
+                    <h3>Web Development</h3>
+                    <span class="pill">Frontend</span>
+                </div>
+                <p>Responsive landing pages, portfolio sites, and dashboards with performance and SEO in mind.</p>
+                <div class="service-meta">
+                    <span>HTML/CSS</span>
+                    <span>JavaScript</span>
+                    <span>API Integration</span>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <div class="service-top">
+                    <h3>Product Prototyping</h3>
+                    <span class="pill">Idea → MVP</span>
+                </div>
+                <p>Quick, realistic prototypes to validate ideas, test flows, and pitch concepts with confidence.</p>
+                <div class="service-meta">
+                    <span>User Flows</span>
+                    <span>Rapid Iteration</span>
+                    <span>Demo-ready</span>
+                </div>
+
+                
+            </article>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="section-header">
+            <div class="section-kicker">— Resume</div>
+            <h2 class="section-title">CV Details at a Glance.</h2>
+            <p class="section-subtitle">Skills, experience, education, and credentials. Replace the placeholder entries with your real details and I can format them perfectly.</p>
+        </div>
+
+        <div class="resume-grid">
+            <div class="resume-card">
+                <div class="resume-card-top">
+                    <h3>Toolbox</h3>
+                    <span class="pill">Skills + Tools</span>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-title">Design</div>
+                    <div class="chip-row">
+                        <button type="button" class="chip skill-chip" data-skill="Figma" data-percent="82">Figma</button>
+                        <button type="button" class="chip skill-chip" data-skill="Wireframing" data-percent="78">Wireframing</button>
+                        <button type="button" class="chip skill-chip" data-skill="Prototyping" data-percent="75">Prototyping</button>
+                        <button type="button" class="chip skill-chip" data-skill="Design Systems" data-percent="70">Design Systems</button>
+                        <button type="button" class="chip skill-chip" data-skill="UX Writing" data-percent="68">UX Writing</button>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-title">Development</div>
+                    <div class="chip-row">
+                        <button type="button" class="chip skill-chip" data-open-modal="true" data-skill="HTML" data-percent="85">HTML</button>
+                        <button type="button" class="chip skill-chip" data-open-modal="true" data-skill="CSS" data-percent="80">CSS</button>
+                        <button type="button" class="chip skill-chip" data-open-modal="true" data-skill="JavaScript" data-percent="72">JavaScript</button>
+                        <button type="button" class="chip skill-chip" data-open-modal="true" data-skill="PHP" data-percent="65">PHP</button>
+                        <button type="button" class="chip skill-chip" data-open-modal="true" data-skill="MySQL" data-percent="68">MySQL</button>
+                    </div>
+                </div>
+
+                <div class="skill-block">
+                    <div class="skill-title">Engineering</div>
+                    <div class="chip-row">
+                        <button type="button" class="chip skill-chip" data-skill="Arduino / IoT" data-percent="62">Arduino / IoT</button>
+                        <button type="button" class="chip skill-chip" data-skill="Sensors" data-percent="60">Sensors</button>
+                        <button type="button" class="chip skill-chip" data-skill="Basic Networking" data-percent="55">Basic Networking</button>
+                        <button type="button" class="chip skill-chip" data-skill="Debugging" data-percent="70">Debugging</button>
+                    </div>
+                </div>
+
+                <div class="mastery-grid">
+                    <div class="mastery-card">
+                        <div class="chart-container">
+                            <canvas id="hardwareChart"></canvas>
+                        </div>
+                        <p class="mastery-desc">IoT, embedded systems, circuit prototyping, and hardware troubleshooting.</p>
+                    </div>
+                    <div class="mastery-card">
+                        <div class="chart-container">
+                            <canvas id="softwareChart"></canvas>
+                        </div>
+                        <p class="mastery-desc">Frontend development, UI/UX design, scripting, and web application logic.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-card">
+                <div class="resume-card-top">
+                    <h3>Experience</h3>
+                    <span class="pill">Intern</span>
+                </div>
+
+                <div class="resume-timeline">
+                    <div class="resume-item">
+                        <div class="resume-role">Hardware Technician</div>
+                        <div class="resume-meta">Intern</div>
+                        <div class="resume-location">Parañaque City Hall - Information Technology Department</div>
+                        <ul class="resume-bullets">
+                            <li>Performed preventive maintenance, troubleshooting, and system upgrades for improved performance</li>
+                            <li>Assisted in network setup, cable management, and device connectivity</li>
+                            <li>Provided technical support and assistance to staff for IT-related concerns</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-item">
+                        <div class="resume-role">Web Developer</div>
+                        <div class="resume-meta">Intern</div>
+                        <div class="resume-location">Moonwalk Barangay Hall - Information Technology Department</div> 
+                        <ul class="resume-bullets">
+                            <li>Developed a web-based resident information and social assistance system using HTML, CSS, JavaScript, and PHP to streamline data collection and service processing</li>
+                            <li>Integrated database management and secure authentication features to ensure accurate records handling, data privacy, and controlled user access</li>
+                            <li>Performed system testing, debugging, maintenance, and updates to improve reliability, performance, and overall user experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-grid secondary">
+            <div class="resume-card">
+                <div class="resume-card-top">
+                    <h3>Education</h3>
+                    <span class="pill">Background</span>
+                </div>
+                <div class="resume-item compact">
+                    <div class="resume-role">BS Computer Engineering</div>
+                    <div class="resume-meta">Polytechnic University of the Philippines · Fourth Year - Present</div>
+                    <div class="resume-desc">Relevant focus: software fundamentals, hardware concepts, and building usable interfaces.</div>
+                </div>
+                
+                <div class="resume-item compact">
+                    <div class="resume-role">Science, Technology, Engineering, and Mathematics (STEM)</div>
+                    <div class="resume-meta">Sun Valley National High School · 2021 — Graduated</div>
+                    <div class="resume-desc">Relevant focus: software fundamentals, hardware concepts, and building usable interfaces.</div>
+                </div>
+            </div>
+
+            <div class="resume-card">
+                <div class="resume-card-top">
+                    <h3>Certifications & Awards</h3>
+                    <span class="pill">Credentials</span>
+                </div>
+                <div class="cert-list">
+                    <div class="cert-item">
+                        <div class="cert-name">Introduction to Cloud Security</div>
+                        <div class="cert-meta">Simplilearn SkillUp · 2026</div>
+                        <a class="cert-code">Verification Code: 9102601</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Ethical hacking 101 : Beginners guide to Ethical hacking</div>
+                        <div class="cert-meta">Simplilearn SkillUp · 2026</div>
+                        <a class="cert-code">Verification Code: 9163723</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-name">Generative AI for Everyone</div>
+                        <div class="cert-meta">Simplilearn SkillUp - Google Cloud· 2026</div>
+                        <a class="cert-code">Verification Code: 9804743</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="section-header">
+            <div class="section-kicker">— About</div>
+            <h2 class="section-title">A builder mindset with a designer eye.</h2>
+            <p class="section-subtitle">Committed to building intuitive, user-friendly, and technically robust solutions while exploring AI-assisted UX and rapid product iteration.</p>
+        </div>
+
+        <div class="grid-2 about-grid">
+            <div class="about-card">
+                <h3>Focus</h3>
+                <p>A dedicated Computer Engineering student with a strong builder mindset and a designer’s eye for detail. Passionate about creating systems that are simple to use, efficient, and reliable under the hood. Experienced in developing clean frontends, functional prototypes, and user-centered solutions that turn ideas into real, working products. Currently exploring AI-assisted UX and rapid product iteration to build smarter and more impactful digital experiences.
+
+Beyond technical skills, I bring discipline, teamwork, and resilience shaped by my experience as an athlete, allowing me to stay focused under pressure and continuously improve through challenges. I enjoy collaborating with teams, learning new technologies, and refining ideas through testing and iteration. My goal is to build practical, meaningful solutions that make everyday tasks easier and deliver real value to users and communities.</p>
+
+                <div class="about-tags">
+                    <span class="pill">Usability</span>
+                    <span class="pill">Accessibility</span>
+                    <span class="pill">Performance</span>
+                    <span class="pill">Consistency</span>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <h3>Highlights</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-title">Computer Engineering Student</div>
+                        <div class="timeline-desc">Building practical systems across web apps, UI/UX, and embedded/IoT projects with a focus on reliability and real-world use.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-title">Design + Development Workflow</div>
+                        <div class="timeline-desc">From wireframes and prototypes to polished interfaces and clean, maintainable implementations using reusable components.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-title">Athlete Mindset + Continuous Learning</div>
+                        <div class="timeline-desc">Bodybuilding and powerlifting athlete developing discipline, resilience, and consistency while exploring AI tools and smarter ways to iterate and ship better products.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="section-header compact">
+            <div class="section-kicker">— Works</div>
+            <h2 class="section-title">Creative <span>Output.</span></h2>
+            <p class="section-subtitle">A few projects that highlight my range in UI/UX, development, and product thinking.</p>
+        </div>
+        <div class="bento-grid">
+            <div class="card">
+                <img src="img/districtdos.jpg" alt="Work">
+                <div class="card-info"><h3>District Dos: Local Population Information and Social Assistance for Parañaque District 2</h3>
+                    <p>Population Dashboard</p></div>
+            </div>
+            <div class="card">
+                <img src="img/FL.PNG" alt="Work">
+                <div class="card-info"><h3>IoT-Enabled Electro-Floor System with Integrated Water Passageway for Sustainable Energy Generation Along the Sidewalks of Daang Batang Avenue, Barangay Moonwalk, Parañaque City</h3>
+                    <p>Thesis Project</p></div>
+            </div>
+        </div>
+
+        <div class="project-grid">
+            <article class="project-card">
+                <div class="project-top">
+                    <div>
+                        <h3>District Dos</h3>
+                        <div class="project-meta">Role: Population Dashboard</div>
+                    </div>
+                    <span class="pill">Featured</span>
+                </div>
+                <p class="project-desc">A web-based dashboard that manages resident data, tracks population statistics, and supports social assistance and reporting for District 2, Parañaque.</p>
+                <div class="chip-row">
+                    <span class="chip">HTML</span>
+                    <span class="chip">CSS</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">PHP</span>
+                    <span class="chip">MySQL</span>
+                </div>
+                <ul class="project-bullets">
+                    <li>Enabled real-time monitoring of population statistics and community records</li>
+                    <li>Designed an interactive, user-friendly interface to improve efficiency, accuracy, and transparency of barangay operations</li>
+                    <li>Implemented data visualization and reporting features for better decision-making</li>
+                    <li>Centralized collection, management, and visualization of resident demographic and household data</li>
+                </ul>
+                <div class="project-links">
+                    <a class="btn btn-ghost" href="#">Live</a>
+                    <a class="btn btn-primary" href="#">Code</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-top">
+                    <div>
+                        <h3>Project: Electrofloor</h3>
+                        <div class="project-meta">Role: Piezoelectric & Hydropower Energy Generation</div>
+                    </div>
+                    <span class="pill">IoT</span>
+                    
+                </div>
+                <p class="project-desc">An IoT-enabled smart floor system that generates sustainable electricity from pedestrian footsteps and flowing water using piezoelectric and hydropower technologies.</p>
+                <div class="chip-row">
+                    <span class="chip">ESP 32</span>
+                    <span class="chip">Sensors</span>
+                    <span class="chip">UI Prototype</span>
+                    <span class="chip">Energy Generation</span>
+                    <span class="chip">Piezoelectric</span>
+                    <span class="chip">Hydropower</span>
+                </div>
+                <ul class="project-bullets">
+                    <li>Generates electricity from pedestrian footsteps using piezoelectric sensors</li>
+                    <li>Harnesses flowing water through an integrated micro-hydropower passageway</li>
+                    <li>IoT-enabled for real-time energy monitoring and data collection</li>
+                    <li>Designed for sidewalk integration and smart city applications</li>
+                    <li>Supports sustainable and renewable power generation</li>
+                </ul>
+                <div class="project-links">
+                    <a class="btn btn-ghost" href="#">Case study</a>
+                    <a class="btn btn-primary" href="#">Slides</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <div class="section-header">
+            <div class="section-kicker">— Blog</div>
+            <h2 class="section-title">Notes, breakdowns, and learnings.</h2>
+            <p class="section-subtitle">Short posts about building projects, design decisions, and what I’m learning right now.</p>
+        </div>
+
+        <div class="grid-3">
+            <article class="blog-card">
+                <div class="blog-date">Feb 2026</div>
+                <h3>Designing a clean portfolio system</h3>
+                <p>How I structure sections, typography, and spacing to make a portfolio feel premium and readable.</p>
+                <a class="text-link" href="#">Read more →</a>
+            </article>
+            <article class="blog-card">
+                <div class="blog-date">Feb 2026</div>
+                <h3>From concept to clickable prototype</h3>
+                <p>A quick workflow for turning an idea into a demo-ready prototype using lightweight components.</p>
+                <a class="text-link" href="#">Read more →</a>
+            </article>
+            <article class="blog-card">
+                <div class="blog-date">Feb 2026</div>
+                <h3>Small UI details that improve trust</h3>
+                <p>Micro-interactions, loading states, and subtle motion that make interfaces feel more refined.</p>
+                <a class="text-link" href="#">Read more →</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="section-header">
+            <div class="section-kicker">— Contact</div>
+            <h2 class="section-title">Let’s build something.</h2>
+            <p class="section-subtitle">Tell me about your project, timeline, and goals. I’ll reply with questions and next steps.</p>
+        </div>
+
+        <div class="contact-wrap">
+            <div class="contact-card">
+                <h3>Send a message</h3>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@email.com" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="What are you building?"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="contactSendBtn">Send message</button>
+                </form>
+            </div>
+
+            <div class="contact-card">
+                <h3>Quick details</h3>
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <div class="detail-label">Location</div>
+                        <div class="detail-value">Parañaque, PH</div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Email</div>
+                        <div class="detail-value"><a href="mailto:tesadojaymar042004@gmail.com">tesadojaymar042004@gmail.com</a></div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-label">Social</div>
+                        <div class="detail-value">Instagram / Facebook / GitHub</div>
+                    </div>
+                </div>
+                <a class="btn btn-ghost" href="#work">See work</a>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+        <div>&copy; <span id="year"></span> Tesado Jaymar</div>
+        <div class="footer-social">
+            <a href="https://www.instagram.com/shibuii.jm/"><img src="img/ig.gif" alt="Instagram"></a>
+            <a href="https://www.facebook.com/D4rkf13nd/"><img src="img/fb.gif" alt="Facebook"></a>
+            <a href="https://github.com/D4rkf13nd"><img src="img/github.gif" alt="GitHub"></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tesadojaymar042004@gmail.com"><img src="img/gmail.gif" alt="Gmail"></a>
+        </div>
+        <a class="text-link" href="#top"><img src="img/J.png" alt="Back to top" class="back-to-top-logo"></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
